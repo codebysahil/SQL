@@ -1,0 +1,22 @@
+CREATE TABLE IF NOT EXISTS emp
+
+(
+
+    emp_id         INT 
+
+  , emp_name       VARCHAR(100) 
+
+  , salary         int 
+
+  , manager_id     VARCHAR(10)
+
+  , emp_age                      INT
+
+  , dep_id                     VARCHAR(10)
+
+  , dep_name                 VARCHAR(10)
+
+  , gender           VARCHAR(10)
+
+
+);
