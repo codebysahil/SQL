@@ -1,0 +1,3 @@
+
+update emp set dep_name =null
+where emp_id=11
