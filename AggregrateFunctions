@@ -1,0 +1,32 @@
+https://www.youtube.com/watch?v=5Ighj_2PGV0&list=PLBTZqjSKn0IcR6DhoLUibOG8frnWbZdSH&index=17
+
+
+CREATE TABLE int_orders (
+    order_number INT NOT NULL,
+    order_date DATE NOT NULL,
+    cust_id INT NOT NULL,
+    salesperson_id INT NOT NULL,
+    amount FLOAT NOT NULL
+);
+
+
+insert into int_orders values (30, CAST(N'1995-07-14' AS Date), 9, 1, 460)
+
+insert into int_orders VALUES (10, CAST(N'1996-08-02' AS Date), 4, 2, 540)
+
+insert into int_orders VALUES (40, CAST(N'1998-01-29' AS Date), 7, 2, 2400)
+insert into int_orders VALUES (50, CAST(N'1998-02-03' AS Date), 6, 7, 600)
+insert into int_orders VALUES (60, CAST(N'1998-03-02' AS Date), 6, 7, 720)
+insert into int_orders VALUES (70, CAST(N'1998-05-06' AS Date), 9, 7, 150)
+insert into int_orders VALUES (20, CAST(N'1999-01-30' AS Date), 4, 8, 1800)
+
+
+select * from int_orders
+
+30	1995-07-14	9	1	460.0
+10	1996-08-02	4	2	540.0
+40	1998-01-29	7	2	2400.0
+50	1998-02-03	6	7	600.0
+60	1998-03-02	6	7	720.0
+70	1998-05-06	9	7	150.0
+20	1999-01-30	4	8	1800.0
